@@ -11,6 +11,7 @@ npm install axios
 npm run serve
 ```
 ### App Use manual
+switch APi_key to your google_api_key in index.html and myLocation.vue page
 The blue icon beside the search bar will show the current location of the user.
 All searched locations will be stored and displayed.
 When you click on a previously searched address, the map will jump to that location. 
