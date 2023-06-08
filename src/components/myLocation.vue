@@ -106,7 +106,7 @@ export default{
         //get location name use google map api
         getLocation(lat,lng){
             axios.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ lat + "," 
-            + lng + "&key=AIzaSyC3CNCr_H2CWWa3LeM2dqUr9e9IGWQ6MpA").then(response =>{
+            + lng + "&key=Google_API_KEY").then(response =>{
                 if(response.data.error_message){
                     console.log(response.data.error_message);
                 }else{
@@ -124,7 +124,7 @@ export default{
             var timestamp = Math.floor(Date.now() / 1000);
             axios.get('https://maps.googleapis.com/maps/api/timezone/json?location=' + lat + ',' + lng + 
             '&timestamp=' + timestamp + 
-            "&key=AIzaSyC3CNCr_H2CWWa3LeM2dqUr9e9IGWQ6MpA").then(response =>{
+            "&key=key=Google_API_KEY").then(response =>{
                 if(response.data.error_message){
                     console.log(response.data.error_message);
                 }else{
